@@ -1,0 +1,76 @@
+[
+  {
+    "Key": "IDNumber",
+    "ColumnLetter": "A",
+    "IsPrimaryKey": true,
+    "DatabaseColumn": "IDNumber",
+    "ValuesToExclude": [
+      {
+        "Value": ""
+      }
+    ],
+    "CalculationSetup": null,
+    "Encrypted": true
+  },
+  {
+    "Key": "FirstName",
+    "ColumnLetter": "B",
+    "IsPrimaryKey": false,
+    "DatabaseColumn": "FirstName",
+    "ValuesToExclude": null,
+    "CalculationSetup": null
+  },
+  {
+    "Key": "LastName",
+    "ColumnLetter": "C",
+    "IsPrimaryKey": false,
+    "DatabaseColumn": "LastName",
+    "ValuesToExclude": [
+      {
+        "Value": "Unknown"
+      },
+      {
+        "Value": "Temp"
+      }
+    ],
+    "CalculationSetup": null
+  },
+  {
+    "Key": "Club",
+    "ColumnLetter": "D",
+    "IsPrimaryKey": false,
+    "DatabaseColumn": "Club",
+    "ValuesToExclude": null,
+    "CalculationSetup": null
+  },
+  {
+    "Key": "Province",
+    "ColumnLetter": "Z",
+    "IsPrimaryKey": false,
+    "DatabaseColumn": "Province",
+    "ValuesToExclude": null,
+    "CalculationSetup": null
+  },
+  {
+    "Key": "Age",
+    "ColumnLetter": "E",
+    "IsPrimaryKey": false,
+    "DatabaseColumn": "Age",
+    "ValuesToExclude": null,
+    "CalculationSetup": {
+      "Type": "AgeCalculation",
+      "FieldToUse": "IDNumber"
+    }
+  },
+  {
+    "Key": "Gender",
+    "ColumnLetter": "F",
+    "IsPrimaryKey": false,
+    "DatabaseColumn": "Gender",
+    "ValuesToExclude": null,
+    "CalculationSetup": {
+      "Type": "GenderCalculation",
+      "FieldToUse": "IDNumber"
+    }
+  }
+]
